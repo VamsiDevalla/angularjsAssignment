@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>username</th>
+        <th>location</th>
+        <th>phone</th>
+    </tr>
+    <tr ng-repeat="user in users track by $index">
+        <td>{{user.username}}</td>
+        <td>{{user.location}}</td>
+        <td>{{user.phone}}</td>
+    </tr>
+</table>
+
+<form>
+    <input type="text" name="username" id="username" placeholder="enter firstname">
+    <input type="text" name="location" id="location" placeholder="enter location">
+    <input type="text" name="phone" id="phone" placeholder="enter phone">
+    <input type="button" ng-click="createUser" value="createForm">
+</form>
